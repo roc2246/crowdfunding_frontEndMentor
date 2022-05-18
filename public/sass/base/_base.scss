@@ -2,3 +2,10 @@ html {
   /* This defines what 1 rem is */
   font-size: $font-size;
 }
+
+body{
+  margin: 0rem;
+  background-color: $color-wheat;
+  font-family: $font-family;
+}
+

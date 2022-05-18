@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap");
+html {
+  /* This defines what 1 rem is */
+  font-size: 16px; }
+
+body {
+  margin: 0rem;
+  background-color: rgba(187, 113, 113, 0.667);
+  font-family: "Overpass", sans-serif; }
+
+.heading-primary .heading-primary--sub {
+  font-size: 1rem;
+  color: #7a7a7a; }
+
+.heading-secondary .heading-secondary--sub {
+  font-size: 1rem;
+  color: #7a7a7a; }
+
+.heading-tertiary .heading-tertiary--main {
+  font-size: 1.25rem; }
+
+.heading-tertiary .heading-tertiary--sub {
+  font-size: 1rem;
+  color: #3cb4ac; }
+
+.paragraph {
+  color: #7a7a7a; }
+
+.metric .metric--progress {
+  color: black;
+  font-size: 2rem;
+  font-weight: 700; }
+
+.metric .metric--goal {
+  color: #7a7a7a; }
+
+a {
+  text-decoration: none; }
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 0.5rem rgba(0, 0, 0, 0.2); }
+
+header {
+  background-image: url("../images/image-hero-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 30rem;
+  padding-top: 2rem;
+  padding-left: 6%;
+  padding-right: 6%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.nav {
+  justify-content: space-between; }
+  .nav__link {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: #7a7a7a; }
+    .nav__link:link, .nav__link:visited {
+      color: white; }
+
+main {
+  margin-left: 20%;
+  margin-right: 20%; }
