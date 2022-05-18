@@ -65,4 +65,25 @@ header {
 
 main {
   margin-left: 20%;
-  margin-right: 20%; }
+  margin-right: 20%;
+  margin-top: -6rem;
+  padding-left: 5%;
+  padding-right: 5%; }
+
+.project-top, .backer-metrics, .project-details {
+  background-color: #fff;
+  border-radius: .5rem;
+  border-style: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 2rem; }
+
+.project-details__offers-box .offer {
+  background-color: #fff;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: rgba(187, 113, 113, 0.667);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 2rem; }
