@@ -1,7 +1,17 @@
-$color-primary: #55c57a;
-$color-primary-light: #7ed56f;
-$color-primary-dark: #28b485;
+$color-primary-light: hsl(176, 50%, 47%);
+$color-primary-dark: hsl(176, 72%, 28%);
 
-$color-grey-dark: #777;
+$color-neutral-light:hsl(0, 0%, 48%);
+$color-neutral-dark: hsl(0, 0%, 0%);
+
 $color-white: #fff;
+$color-wheat: rgba(255, 255, 255, 0.667);
 $color-black: #000;
+
+$font-family: 'Overpass', sans-serif;
+$font-size: 62.5%;
+$font-weight-light: 400;
+$font-weight-medium: 500;
+$font-weight-heavy: 700;
+
+$mobile-width: 375px;
