@@ -6,21 +6,27 @@
   "scripts": {
     "start": "node src/index.js",
     "compile:sass": "node-sass public/sass/main.scss public/css/style.css -w",
-    "build": "babel src -d lib",
-    "babel:watch": "babel-watch public/js/script.js"
+    "babel": "npx babel public/js/script.js --watch --out-file public/js/script.dist.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "babel-watch": "^7.7.0",
-    "nodemon": "^2.0.16",
-    "sass": "^1.51.0"
-  },
-  "dependencies": {
     "@babel/cli": "^7.17.10",
     "@babel/core": "^7.18.0",
+    "@babel/plugin-transform-arrow-functions": "^7.17.12",
     "@babel/preset-env": "^7.18.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-watch": "^7.7.0",
+    "nodemon": "^2.0.16",
+    "sass": "^1.51.0",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0"
+  },
+  "dependencies": {
     "express": "^4.18.1"
   }
 }
