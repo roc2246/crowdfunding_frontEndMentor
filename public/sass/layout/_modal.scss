@@ -1,0 +1,32 @@
+.modal,
+.confirm {
+  @include card(none);
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .option {
+    width: 100%;
+    height: auto;
+    @include card(solid);
+    border-width: 0.1rem;
+    border-color: $color-wheat;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    &__top {
+      .metric {
+        float: right;
+        display: flex;
+        flex-direction: row;
+      }
+    }
+  }
+}

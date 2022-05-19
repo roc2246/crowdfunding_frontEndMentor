@@ -70,7 +70,19 @@ main {
   padding-left: 5%;
   padding-right: 5%; }
 
+.heading-primary {
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+
+.heading-secondary {
+  display: flex;
+  flex-direction: column;
+  text-align: left; }
+
 .project-top, .backer-metrics, .project-details {
+  width: 100%;
+  height: auto;
   background-color: #fff;
   border-radius: .5rem;
   border-style: none;
@@ -87,3 +99,57 @@ main {
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding: 2rem; }
+
+.project-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .project-top__logo-box {
+    position: absolute;
+    margin-top: -3.5rem;
+    margin-left: auto;
+    margin-right: auto; }
+  .project-top .btn--bookmark {
+    float: right; }
+
+.backer-metrics {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; }
+  .backer-metrics .metric:nth-child(2) {
+    border-left: solid;
+    border-right: solid;
+    border-width: .1rem;
+    border-color: grey; }
+
+.modal,
+.confirm {
+  background-color: #fff;
+  border-radius: .5rem;
+  border-style: none;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-left: 5%;
+  padding-right: 5%; }
+  .modal__text-box,
+  .confirm__text-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+  .modal .option,
+  .confirm .option {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border-radius: .5rem;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: rgba(187, 113, 113, 0.667);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 2rem; }
+    .modal .option__top .metric,
+    .confirm .option__top .metric {
+      float: right;
+      display: flex;
+      flex-direction: row; }
