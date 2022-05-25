@@ -1,10 +1,12 @@
 .modal,
 .confirm {
+  display: none;
   @include card(none);
   margin-left: 20%;
   margin-right: 20%;
-  padding-left: 5%;
-  padding-right: 5%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  padding: 5%;
 
   &__text-box {
     display: flex;
@@ -13,8 +15,6 @@
   }
 
   .option {
-    width: 100%;
-    height: auto;
     @include card(solid);
     border-width: 0.1rem;
     border-color: $color-wheat;

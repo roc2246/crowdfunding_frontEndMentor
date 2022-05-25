@@ -124,13 +124,15 @@ main {
 
 .modal,
 .confirm {
+  display: none;
   background-color: #fff;
   border-radius: .5rem;
   border-style: none;
   margin-left: 20%;
   margin-right: 20%;
-  padding-left: 5%;
-  padding-right: 5%; }
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  padding: 5%; }
   .modal__text-box,
   .confirm__text-box {
     display: flex;
@@ -138,8 +140,6 @@ main {
     text-align: center; }
   .modal .option,
   .confirm .option {
-    width: 100%;
-    height: auto;
     background-color: #fff;
     border-radius: .5rem;
     border-style: solid;
