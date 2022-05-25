@@ -46,6 +46,18 @@ a {
   .btn--green {
     background-color: #3cb4ac;
     color: #fff; }
+  .btn--bookmark {
+    background-color: grey;
+    color: #fff;
+    border-top-left-radius: 0rem;
+    border-bottom-left-radius: 0rem; }
+    .btn--bookmark__icon {
+      position: absolute;
+      margin-left: -3rem;
+      margin-top: -1.2rem; }
+    .btn--bookmark__text {
+      padding-left: 1rem;
+      padding-right: .5rem; }
 
 header {
   background-image: url("../images/image-hero-desktop.jpg");

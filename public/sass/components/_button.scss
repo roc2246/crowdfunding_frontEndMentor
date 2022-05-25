@@ -10,4 +10,20 @@
     background-color: $color-primary-light;
     color: $color-white;
   }
+
+  &--bookmark{
+    background-color: grey;
+    color: $color-white;
+    border-top-left-radius: 0rem;
+    border-bottom-left-radius: 0rem;
+    &__icon{
+      position: absolute;
+      margin-left: -3rem;
+      margin-top: -1.2rem;
+    }
+   &__text{
+     padding-left: 1rem;
+     padding-right: .5rem;
+   }
+  }
 }
