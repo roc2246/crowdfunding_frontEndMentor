@@ -37,9 +37,15 @@ body {
 a {
   text-decoration: none; }
 
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 1rem 0.5rem rgba(0, 0, 0, 0.2); }
+.btn {
+  border-radius: 4rem;
+  padding: 1rem; }
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 0.5rem rgba(0, 0, 0, 0.2); }
+  .btn--green {
+    background-color: #3cb4ac;
+    color: #fff; }
 
 header {
   background-image: url("../images/image-hero-desktop.jpg");
@@ -80,7 +86,9 @@ main {
   flex-direction: column;
   text-align: left; }
 
-.project-top, .backer-metrics, .project-details {
+.project-top,
+.backer-metrics,
+.project-details {
   width: 100%;
   height: auto;
   background-color: #fff;
@@ -119,8 +127,15 @@ main {
   .backer-metrics .metric:nth-child(2) {
     border-left: solid;
     border-right: solid;
-    border-width: .1rem;
+    border-width: 0.1rem;
     border-color: grey; }
+
+.out-of-stock *, .out-of-stock .metric--progress {
+  color: grey; }
+
+.out-of-stock .btn {
+  background-color: grey;
+  color: #fff; }
 
 .modal,
 .confirm {

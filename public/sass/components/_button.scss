@@ -1,15 +1,13 @@
 .btn {
-    &:link {
-
-    }
-    &:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 1rem 0.5rem rgba($color-black, 0.2);
-  
-    }
-  
-    &--green {
-
-    }
-
+  border-radius: 4rem;
+  padding: 1rem;
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 0.5rem rgba($color-black, 0.2);
   }
+
+  &--green {
+    background-color: $color-primary-light;
+    color: $color-white;
+  }
+}

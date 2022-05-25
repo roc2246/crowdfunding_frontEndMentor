@@ -1,4 +1,4 @@
-main{
+main {
   margin-left: 20%;
   margin-right: 20%;
   margin-top: -6rem;
@@ -6,19 +6,21 @@ main{
   padding-right: 5%;
 }
 
-.heading-primary{
+.heading-primary {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
-.heading-secondary{
+.heading-secondary {
   display: flex;
   flex-direction: column;
   text-align: left;
 }
 
-.project-top, .backer-metrics, .project-details{
+.project-top,
+.backer-metrics,
+.project-details {
   width: 100%;
   height: auto;
   @include card(none);
@@ -27,14 +29,14 @@ main{
   padding: 2rem;
 }
 
-.project-details__offers-box{
-  .offer{
-    @include card (solid);
+.project-details__offers-box {
+  .offer {
+    @include card(solid);
     border-width: 0.1rem;
     border-color: $color-wheat;
     margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding: 2rem;
+    margin-bottom: 1rem;
+    padding: 2rem;
   }
 }
 
@@ -42,25 +44,35 @@ main{
   display: flex;
   flex-direction: column;
   align-items: center;
-  &__logo-box{
+  &__logo-box {
     position: absolute;
     margin-top: -3.5rem;
     margin-left: auto;
     margin-right: auto;
   }
-  .btn--bookmark{
+  .btn--bookmark {
     float: right;
   }
 }
 
-.backer-metrics{
+.backer-metrics {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  .metric:nth-child(2){
+  .metric:nth-child(2) {
     border-left: solid;
     border-right: solid;
-    border-width: .1rem;
+    border-width: 0.1rem;
     border-color: grey;
+  }
+}
+
+.out-of-stock {
+  *, .metric--progress {
+    color: grey;
+  }
+  .btn{
+    background-color: grey;
+    color: $color-white;
   }
 }
