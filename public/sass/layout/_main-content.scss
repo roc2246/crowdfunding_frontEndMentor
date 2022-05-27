@@ -37,6 +37,25 @@ main {
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding: 2rem;
+    .heading-tertiary {
+      .heading-tertiary--sub {
+        float: right;
+      }
+    }
+    .offer__amount-available {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .metric{
+        display: flex;
+      flex-direction: row;
+      &--paragraph{
+        margin-left: .25rem;
+        margin-top: 0rem;
+        padding: .5rem;
+      }
+      }
+    }
   }
 }
 
@@ -50,9 +69,8 @@ main {
     margin-left: auto;
     margin-right: auto;
   }
-  .btn--green{
+  .btn--green {
     float: left;
-
   }
 
   .btn--bookmark {
@@ -73,10 +91,11 @@ main {
 }
 
 .out-of-stock {
-  *, .metric--progress {
+  *,
+  .metric--progress {
     color: grey;
   }
-  .btn{
+  .btn {
     background-color: grey;
     color: $color-white;
   }

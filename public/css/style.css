@@ -119,6 +119,19 @@ main {
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding: 2rem; }
+  .project-details__offers-box .offer .heading-tertiary .heading-tertiary--sub {
+    float: right; }
+  .project-details__offers-box .offer .offer__amount-available {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .project-details__offers-box .offer .offer__amount-available .metric {
+      display: flex;
+      flex-direction: row; }
+      .project-details__offers-box .offer .offer__amount-available .metric--paragraph {
+        margin-left: .25rem;
+        margin-top: 0rem;
+        padding: .5rem; }
 
 .project-top {
   display: flex;
@@ -144,7 +157,8 @@ main {
     border-width: 0.1rem;
     border-color: grey; }
 
-.out-of-stock *, .out-of-stock .metric--progress {
+.out-of-stock *,
+.out-of-stock .metric--progress {
   color: grey; }
 
 .out-of-stock .btn {
