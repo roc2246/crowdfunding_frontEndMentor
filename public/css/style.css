@@ -129,6 +129,8 @@ main {
     margin-top: -3.5rem;
     margin-left: auto;
     margin-right: auto; }
+  .project-top .btn--green {
+    float: left; }
   .project-top .btn--bookmark {
     float: right; }
 
