@@ -29,6 +29,23 @@ main {
   padding: 4rem;
 }
 
+
+
+.backer-metrics {
+  &__wrapper{
+    width: 100%;
+    height: auto;
+  }
+  &__metric-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .progress-bar{
+    margin-top: 1rem;
+  }
+}
+
 .project-details__offers-box {
   .offer {
     @include card(solid);
@@ -46,14 +63,14 @@ main {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      .metric{
+      .metric {
         display: flex;
-      flex-direction: row;
-      &--paragraph{
-        margin-left: .25rem;
-        margin-top: 0rem;
-        padding: .5rem;
-      }
+        flex-direction: row;
+        &--paragraph {
+          margin-left: 0.25rem;
+          margin-top: 0rem;
+          padding: 0.5rem;
+        }
       }
     }
   }
