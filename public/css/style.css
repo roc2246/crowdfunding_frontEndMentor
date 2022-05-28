@@ -153,23 +153,23 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: flex-start; }
-  .backer-metrics .metric:nth-child(2) {
-    border-left: solid;
-    border-right: solid;
-    border-width: 0.1rem;
-    border-color: grey; }
-
-.backer-metrics__wrapper {
-  width: 100%;
-  height: auto; }
-
-.backer-metrics__metric-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-
-.backer-metrics .progress-bar {
-  margin-top: 1rem; }
+  .backer-metrics__wrapper {
+    width: 100%;
+    height: auto; }
+  .backer-metrics__metric-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; }
+    .backer-metrics__metric-box .metric {
+      margin-left: 0rem;
+      margin-right: auto; }
+      .backer-metrics__metric-box .metric--progress, .backer-metrics__metric-box .metric--paragraph {
+        text-align: right; }
+    .backer-metrics__metric-box hr {
+      margin-left: 0rem;
+      margin-right: auto; }
+  .backer-metrics .progress-bar {
+    margin-top: 1rem; }
 
 .project-details__offers-box .offer {
   background-color: #fff;

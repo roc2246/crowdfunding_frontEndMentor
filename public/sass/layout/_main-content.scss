@@ -62,15 +62,6 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  .metric:nth-child(2) {
-    border-left: solid;
-    border-right: solid;
-    border-width: 0.1rem;
-    border-color: grey;
-  }
-}
-
-.backer-metrics {
   &__wrapper{
     width: 100%;
     height: auto;
@@ -78,7 +69,18 @@ main {
   &__metric-box {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+    .metric{
+      margin-left: 0rem;
+      margin-right: auto;
+      &--progress, &--paragraph{
+        text-align: right;
+      }
+    }
+    hr{
+      margin-left: 0rem;
+      margin-right: auto;
+    }
   }
   .progress-bar{
     margin-top: 1rem;
