@@ -5,7 +5,7 @@ html {
 
 body {
   margin: 0rem;
-  background-color: rgba(187, 113, 113, 0.667);
+  background-color: #f4f4f4;
   font-family: "Overpass", sans-serif; }
 
 .heading-primary .heading-primary--sub {
@@ -39,18 +39,25 @@ a {
 
 .btn {
   border-radius: 4rem;
-  padding: 1rem; }
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem; }
   .btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 1rem 0.5rem rgba(0, 0, 0, 0.2); }
   .btn--green {
     background-color: #3cb4ac;
     color: #fff; }
+    .btn--green:hover {
+      background-color: #147b74; }
   .btn--bookmark {
-    background-color: grey;
-    color: #fff;
+    background-color: #f4f4f4;
+    color: #7a7a7a;
+    font-weight: 700;
     border-top-left-radius: 0rem;
-    border-bottom-left-radius: 0rem; }
+    border-bottom-left-radius: 0rem;
+    padding-right: 1.5rem; }
     .btn--bookmark__icon {
       position: absolute;
       margin-left: -3rem;
@@ -62,7 +69,7 @@ a {
 .progress-bar {
   height: 1.5rem;
   width: 100%;
-  background-color: #7a7a7a;
+  background-color: #f4f4f4;
   border-radius: 1rem; }
   .progress-bar__progress {
     width: 50%;
@@ -103,6 +110,8 @@ main {
   display: flex;
   flex-direction: column;
   text-align: center; }
+  .heading-primary--sub {
+    margin-top: 1rem; }
 
 .heading-secondary {
   display: flex;
@@ -121,6 +130,35 @@ main {
   margin-bottom: 1rem;
   padding: 4rem; }
 
+.project-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .project-top__logo-box {
+    position: absolute;
+    margin-top: -5.5rem;
+    margin-left: auto;
+    margin-right: auto; }
+  .project-top__text-box {
+    width: 70%;
+    height: auto; }
+    .project-top__text-box .btn--green, .project-top__text-box .btn--bookmark {
+      margin-top: 1rem; }
+    .project-top__text-box .btn--green {
+      float: left; }
+    .project-top__text-box .btn--bookmark {
+      float: right; }
+
+.backer-metrics {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; }
+  .backer-metrics .metric:nth-child(2) {
+    border-left: solid;
+    border-right: solid;
+    border-width: 0.1rem;
+    border-color: grey; }
+
 .backer-metrics__wrapper {
   width: 100%;
   height: auto; }
@@ -138,7 +176,7 @@ main {
   border-radius: .5rem;
   border-style: solid;
   border-width: 0.1rem;
-  border-color: rgba(187, 113, 113, 0.667);
+  border-color: #f4f4f4;
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding: 2rem; }
@@ -155,30 +193,6 @@ main {
         margin-left: 0.25rem;
         margin-top: 0rem;
         padding: 0.5rem; }
-
-.project-top {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .project-top__logo-box {
-    position: absolute;
-    margin-top: -3.5rem;
-    margin-left: auto;
-    margin-right: auto; }
-  .project-top .btn--green {
-    float: left; }
-  .project-top .btn--bookmark {
-    float: right; }
-
-.backer-metrics {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start; }
-  .backer-metrics .metric:nth-child(2) {
-    border-left: solid;
-    border-right: solid;
-    border-width: 0.1rem;
-    border-color: grey; }
 
 .out-of-stock *,
 .out-of-stock .metric--progress {
@@ -210,7 +224,7 @@ main {
     border-radius: .5rem;
     border-style: solid;
     border-width: 0.1rem;
-    border-color: rgba(187, 113, 113, 0.667);
+    border-color: #f4f4f4;
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding: 2rem; }

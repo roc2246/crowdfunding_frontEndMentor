@@ -1,6 +1,9 @@
 .btn {
   border-radius: 4rem;
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   &:hover {
     transform: translateY(-3px);
     box-shadow: 0 1rem 0.5rem rgba($color-black, 0.2);
@@ -9,13 +12,19 @@
   &--green {
     background-color: $color-primary-light;
     color: $color-white;
+    &:hover{
+      background-color: $color-primary-dark;
+    }
   }
 
   &--bookmark{
-    background-color: grey;
-    color: $color-white;
+    background-color: $color-wheat;
+    color: $color-neutral-light;
+    font-weight: $font-weight-heavy;
     border-top-left-radius: 0rem;
     border-bottom-left-radius: 0rem;
+  padding-right: 1.5rem;
+
     &__icon{
       position: absolute;
       margin-left: -3rem;

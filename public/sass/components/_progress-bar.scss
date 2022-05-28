@@ -1,13 +1,12 @@
-  .progress-bar {
-    height: 1.5rem;
-    width: 100%;
-    background-color: $color-neutral-light;
-    border-radius: 1rem;
-    &__progress {
-      width: 50%;
+.progress-bar {
+  height: 1.5rem;
+  width: 100%;
+  background-color: $color-wheat;
+  border-radius: 1rem;
+  &__progress {
+    width: 50%;
     height: 1.5rem;
     border-radius: 1rem;
     background-color: $color-primary-light;
-
-    }
   }
+}
