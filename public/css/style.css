@@ -90,23 +90,6 @@ a {
   .header__logo-box {
     margin-left: 4%; }
 
-.nav {
-  justify-content: space-between;
-  margin-right: 4%; }
-  .nav__link {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    color: #7a7a7a; }
-    .nav__link:link, .nav__link:visited {
-      color: white; }
-
-main {
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-top: -6rem;
-  padding-left: 5%;
-  padding-right: 5%; }
-
 .heading-primary {
   display: flex;
   flex-direction: column;
@@ -119,58 +102,15 @@ main {
   flex-direction: column;
   text-align: left; }
 
-.project-top,
-.backer-metrics,
-.project-details {
-  width: 100%;
-  height: auto;
-  background-color: #fff;
-  border-radius: .5rem;
-  border-style: none;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding: 4rem; }
-
-.project-top {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .project-top__logo-box {
-    position: absolute;
-    margin-top: -5.5rem;
-    margin-left: auto;
-    margin-right: auto; }
-  .project-top__text-box {
-    width: 70%;
-    height: auto; }
-    .project-top__text-box .btn--green, .project-top__text-box .btn--bookmark {
-      margin-top: 1rem; }
-    .project-top__text-box .btn--green {
-      float: left; }
-    .project-top__text-box .btn--bookmark {
-      float: right; }
-
-.backer-metrics {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start; }
-  .backer-metrics__wrapper {
-    width: 100%;
-    height: auto; }
-  .backer-metrics__metric-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start; }
-    .backer-metrics__metric-box .metric {
-      margin-left: 0rem;
-      margin-right: auto; }
-      .backer-metrics__metric-box .metric--progress, .backer-metrics__metric-box .metric--paragraph {
-        text-align: right; }
-    .backer-metrics__metric-box hr {
-      margin-left: 0rem;
-      margin-right: auto; }
-  .backer-metrics .progress-bar {
-    margin-top: 1rem; }
+.nav {
+  justify-content: space-between;
+  margin-right: 4%; }
+  .nav__link {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: #7a7a7a; }
+    .nav__link:link, .nav__link:visited {
+      color: white; }
 
 .project-details__offers-box .offer {
   background-color: #fff;
@@ -205,6 +145,67 @@ main {
 .out-of-stock .btn {
   background-color: grey;
   color: #fff; }
+
+.backer-metrics {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; }
+  .backer-metrics__wrapper {
+    width: 100%;
+    height: auto; }
+  .backer-metrics__metric-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; }
+    .backer-metrics__metric-box .metric {
+      margin-left: 0rem;
+      margin-right: auto; }
+      .backer-metrics__metric-box .metric--progress, .backer-metrics__metric-box .metric--paragraph {
+        text-align: right; }
+    .backer-metrics__metric-box hr {
+      margin-left: 0rem;
+      margin-right: auto; }
+  .backer-metrics .progress-bar {
+    margin-top: 1rem; }
+
+main {
+  margin-left: 15%;
+  margin-right: 20%;
+  margin-top: -6rem;
+  padding-left: 5%;
+  padding-right: 5%; }
+
+.project-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .project-top__logo-box {
+    position: absolute;
+    margin-top: -5.5rem;
+    margin-left: auto;
+    margin-right: auto; }
+  .project-top__text-box {
+    width: 70%;
+    height: auto; }
+    .project-top__text-box .btn--green,
+    .project-top__text-box .btn--bookmark {
+      margin-top: 1rem; }
+    .project-top__text-box .btn--green {
+      float: left; }
+    .project-top__text-box .btn--bookmark {
+      float: right; }
+
+.project-top,
+.backer-metrics,
+.project-details {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  border-radius: .5rem;
+  border-style: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 4rem; }
 
 .modal,
 .confirm {

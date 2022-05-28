@@ -1,0 +1,14 @@
+.heading-primary {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  &--sub{
+    margin-top: 1rem;
+  }
+}
+
+.heading-secondary {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}

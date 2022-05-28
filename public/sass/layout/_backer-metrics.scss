@@ -1,0 +1,28 @@
+.backer-metrics {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    &__wrapper{
+      width: 100%;
+      height: auto;
+    }
+    &__metric-box {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      .metric{
+        margin-left: 0rem;
+        margin-right: auto;
+        &--progress, &--paragraph{
+          text-align: right;
+        }
+      }
+      hr{
+        margin-left: 0rem;
+        margin-right: auto;
+      }
+    }
+    .progress-bar{
+      margin-top: 1rem;
+    }
+  }

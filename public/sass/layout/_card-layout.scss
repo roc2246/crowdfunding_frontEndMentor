@@ -1,0 +1,10 @@
+.project-top,
+.backer-metrics,
+.project-details {
+  width: 100%;
+  height: auto;
+  @include card(none);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 4rem;
+}

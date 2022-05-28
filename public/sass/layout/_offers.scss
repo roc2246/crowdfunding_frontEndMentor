@@ -1,0 +1,43 @@
+.project-details__offers-box {
+    .offer {
+      @include card(solid);
+      border-width: 0.1rem;
+      border-color: $color-wheat;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      padding: 2rem;
+      .heading-tertiary {
+        .heading-tertiary--sub {
+          float: right;
+        }
+      }
+      .offer__amount-available {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .metric {
+          display: flex;
+          flex-direction: row;
+          &--paragraph {
+            margin-left: 0.25rem;
+            margin-top: 0rem;
+            padding: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+  
+  .out-of-stock {
+    *,
+    .metric--progress {
+      color: grey;
+    }
+    .heading-tertiary--sub{
+      color: #b4d7d1;
+    }
+    .btn {
+      background-color: grey;
+      color: $color-white;
+    }
+  }
