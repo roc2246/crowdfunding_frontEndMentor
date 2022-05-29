@@ -4,6 +4,7 @@
   padding-bottom: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
+  cursor: pointer;
   &:hover {
     transform: translateY(-3px);
     box-shadow: 0 1rem 0.5rem rgba($color-black, 0.2);

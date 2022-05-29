@@ -8,24 +8,43 @@
   margin-bottom: 2.5%;
   padding: 5%;
 
+
+  &__close{
+    float: right;
+    cursor: pointer;
+  }
+
   &__text-box {
     display: flex;
     flex-direction: column;
     text-align: center;
   }
+}
 
-  .option {
-    @include card(solid);
-    border-width: 0.1rem;
-    border-color: $color-wheat;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding: 2rem;
-    &__top {
-      .metric {
-        float: right;
+.modal {
+  
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  &__options {
+    .option {
+      @include card(solid);
+      border-width: 0.1rem;
+      border-color: $color-wheat;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      padding: 2rem;
+
+
+      &__top {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        .metric {
+          display: flex;
+          flex-direction: row;
+        }
       }
     }
   }
