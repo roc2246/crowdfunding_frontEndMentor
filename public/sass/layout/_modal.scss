@@ -17,6 +17,9 @@
   &__close {
     float: right;
     cursor: pointer;
+    &:hover{
+      color: black;
+    }
   }
 
   &__text-box {
@@ -51,6 +54,12 @@
         flex-direction: row;
         justify-content: space-between;
         .heading-tertiary {
+          &--main{
+            &:hover{
+              color: $color-primary-light;
+              cursor: pointer;
+            }
+          }
           .heading-tertiary--sub {
             margin-left: 1rem;
           }

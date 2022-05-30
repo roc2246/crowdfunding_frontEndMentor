@@ -252,6 +252,9 @@ main {
   .confirm__close {
     float: right;
     cursor: pointer; }
+    .modal__close:hover,
+    .confirm__close:hover {
+      color: black; }
   .modal__text-box,
   .confirm__text-box {
     display: flex;
@@ -280,6 +283,9 @@ main {
       display: flex;
       flex-direction: row;
       justify-content: space-between; }
+      .modal__options .option__top .heading-tertiary--main:hover {
+        color: #3cb4ac;
+        cursor: pointer; }
       .modal__options .option__top .heading-tertiary .heading-tertiary--sub {
         margin-left: 1rem; }
       .modal__options .option__top .metric {
