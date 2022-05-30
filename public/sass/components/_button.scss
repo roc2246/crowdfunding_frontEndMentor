@@ -43,19 +43,13 @@
     border-color: $color-primary-light;
     color: grey;
     font-weight: $font-weight-heavy;
-    width: 3rem;
-    .amount {
-      display: flex;
-      flex-direction: row;
-
-      &__value {
-        outline: none;
-        border: none;
-        caret-color: $color-primary-light;
-        font-size: 1rem;
-    font-weight: $font-weight-heavy;
-
-      }
+    .input {
+      display: inline;
+      outline: none;
+      border: none;
+      caret-color: $color-primary-light;
+      font-size: 1rem;
+      font-weight: $font-weight-heavy;
     }
   }
 }

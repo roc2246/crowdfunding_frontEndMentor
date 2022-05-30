@@ -71,17 +71,14 @@ a {
     border-width: 0.05rem;
     border-color: #3cb4ac;
     color: grey;
-    font-weight: 700;
-    width: 3rem; }
-    .btn--amount .amount {
-      display: flex;
-      flex-direction: row; }
-      .btn--amount .amount__value {
-        outline: none;
-        border: none;
-        caret-color: #3cb4ac;
-        font-size: 1rem;
-        font-weight: 700; }
+    font-weight: 700; }
+    .btn--amount .input {
+      display: inline;
+      outline: none;
+      border: none;
+      caret-color: #3cb4ac;
+      font-size: 1rem;
+      font-weight: 700; }
 
 .progress-bar {
   height: 1.5rem;
@@ -230,8 +227,8 @@ main {
   background-color: #fff;
   border-radius: .5rem;
   border-style: none;
-  margin-left: 12%;
-  margin-right: 12%;
+  margin-left: 25%;
+  margin-right: 25%;
   margin-top: 2.5%;
   margin-bottom: 2.5%;
   padding: 5%; }
@@ -250,6 +247,8 @@ main {
   z-index: 1;
   left: 0;
   top: 0; }
+  .modal__radio {
+    float: left; }
   .modal__options .option {
     background-color: #fff;
     border-radius: .5rem;
@@ -259,7 +258,11 @@ main {
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding: 2rem; }
+    .modal__options .option__radio {
+      margin: 1.15rem;
+      float: left; }
     .modal__options .option__top {
+      margin-left: 2rem;
       display: flex;
       flex-direction: row;
       justify-content: space-between; }
@@ -268,11 +271,13 @@ main {
       .modal__options .option__top .metric {
         display: flex;
         flex-direction: row;
-        margin-top: .5rem; }
+        margin-top: 0.5rem; }
         .modal__options .option__top .metric .metric--progress {
-          margin-right: .5rem; }
+          margin-right: 0.5rem; }
         .modal__options .option__top .metric .metric--paragraph {
-          margin-top: .5rem; }
+          margin-top: 0.5rem; }
+    .modal__options .option .paragraph:nth-child(3), .modal__options .option .paragraph:nth-child(1) {
+      margin-left: 3.5rem; }
     .modal__options .option hr {
       width: 100%; }
     .modal__options .option__pledge {
