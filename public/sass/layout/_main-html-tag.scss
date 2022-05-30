@@ -1,15 +1,15 @@
 main {
-  margin-left: 15%;
-  margin-right: 20%;
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: -6rem;
-  padding-left: 5%;
-  padding-right: 5%;
+
 }
 
 @media only screen and (max-width: 480px) {
   main{
-    margin-left: 2%;
-    margin-right: 34%;
+    max-width: 80%;
+
   }
 }
 
