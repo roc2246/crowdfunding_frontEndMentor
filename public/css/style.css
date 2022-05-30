@@ -63,9 +63,16 @@ a {
       position: absolute;
       margin-left: -3rem;
       margin-top: -1.2rem; }
+      .btn--bookmark__icon:active {
+        display: none; }
     .btn--bookmark__text {
       padding-left: 1rem;
       padding-right: 0.5rem; }
+    .btn--bookmark:active {
+      color: #147b74;
+      border: solid;
+      border-top-left-radius: 2rem;
+      border-bottom-left-radius: 2rem; }
   .btn--amount {
     border: solid;
     border-width: 0.05rem;
