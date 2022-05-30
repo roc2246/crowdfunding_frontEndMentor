@@ -45,7 +45,7 @@
               strain.</span
             >
           </h1>
-          <a onclick="toggleModal('none','block')" class="btn btn--green"
+          <a onclick="toggleModal(modal,'none','block')" class="btn btn--green"
             >Back this project</a
           >
           <a href="" class="btn btn--bookmark"
@@ -175,7 +175,7 @@
         src="images/icon-close-modal.svg"
         alt="Close Button"
         class="modal__close"
-        onclick="toggleModal('block', 'none')"
+        onclick="toggleModal(modal, 'block', 'none')"
       />
       <div class="modal__text-box">
         <h2 class="heading-secondary">
@@ -236,7 +236,7 @@
           <hr />
           <div class="option__pledge">
             <p class="paragraph">Enter your pledge</p>
-            <a href="" class="btn btn--green">Continue</a>
+            <a onclick="complete()" class="btn btn--green">Continue</a>
             <a class="btn btn--amount">
               
                 $ <input type="text" size="2" class="input" />
@@ -268,8 +268,8 @@
           <hr />
           <div class="option__pledge">
             <p class="paragraph">Enter your pledge</p>
-            <a href="" class="btn btn--green">Continue</a>
-            <a href="" class="btn btn--amount"
+            <a onclick="complete()" class="btn btn--green">Continue</a>
+            <a class="btn btn--amount"
               >
                 $
                 <input
@@ -306,8 +306,8 @@
           <hr />
           <div class="option__pledge">
             <p class="paragraph">Enter your pledge</p>
-            <a href="" class="btn btn--green">Continue</a>
-            <a href="" class="btn btn--amount"
+            <a onclick="complete()" class="btn btn--green">Continue</a>
+            <a class="btn btn--amount"
               >
                 $
                 <input
@@ -335,7 +335,7 @@
           Monitor Riser worldwide. You will get an email once our campaign is
           completed.
         </p>
-        <a href="" class="btn btn--green">Got it!</a>
+        <a onclick="toggleModal(completed, 'block', 'none')" class="btn btn--green">Got it!</a>
       </div>
     </div>
     <script src="js/script.js"></script>

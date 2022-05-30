@@ -228,6 +228,9 @@ main {
 
 .modal,
 .confirm {
+  z-index: 1;
+  left: 0;
+  top: 0;
   display: none;
   background-color: #fff;
   border-radius: .5rem;
@@ -248,10 +251,7 @@ main {
     text-align: center; }
 
 .modal {
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  top: 0; }
+  position: absolute; }
   .modal__radio {
     float: left; }
   .modal__options .option {
@@ -298,3 +298,15 @@ main {
         float: right; }
       .modal__options .option__pledge .btn--amount {
         margin-right: 1rem; }
+
+.confirm {
+  position: fixed;
+  width: 30%;
+  margin-left: 30%;
+  margin-right: 30%; }
+  .confirm__img-box {
+    text-align: center; }
+  .confirm .btn {
+    margin-left: auto;
+    margin-right: auto;
+    width: 4rem; }
