@@ -1,13 +1,10 @@
 const modal = document.querySelector(".modal");
 const completed = document.querySelector(".confirm");
-const page = document.querySelector("body, .project-top");
 
 const toggleModal = (box, display1, display2) => {
   if ((box.style.display = display1)) {
     box.style.display = display2;
   }
-
-  // page.style.backgroundColor = "rgba(0,0,0,0.4)";
 };
 
 const option = document.getElementsByClassName("option");
