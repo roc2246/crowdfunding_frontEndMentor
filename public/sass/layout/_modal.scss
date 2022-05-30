@@ -71,8 +71,10 @@
       }
       hr {
         width: 100%;
+        display: none;
       }
       &__pledge {
+        display: none;
         margin-top: 2rem;
         margin-bottom: 2rem;
         .paragraph {

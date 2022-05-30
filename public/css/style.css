@@ -279,8 +279,10 @@ main {
     .modal__options .option .paragraph:nth-child(3), .modal__options .option .paragraph:nth-child(1) {
       margin-left: 3.5rem; }
     .modal__options .option hr {
-      width: 100%; }
+      width: 100%;
+      display: none; }
     .modal__options .option__pledge {
+      display: none;
       margin-top: 2rem;
       margin-bottom: 2rem; }
       .modal__options .option__pledge .paragraph {
