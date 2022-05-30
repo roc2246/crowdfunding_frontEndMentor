@@ -167,8 +167,10 @@ main {
 .out-of-stock .btn {
   background-color: grey;
   color: #fff; }
-  .out-of-stock .btn:active {
-    display: none; }
+
+.out-of-stock .option__radio input {
+  pointer-events: none;
+  opacity: 0.5; }
 
 .backer-metrics {
   display: flex;
