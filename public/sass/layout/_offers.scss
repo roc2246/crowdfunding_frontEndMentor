@@ -39,5 +39,8 @@
     .btn {
       background-color: grey;
       color: $color-white;
+      &:active{
+display: none;
+      }
     }
   }

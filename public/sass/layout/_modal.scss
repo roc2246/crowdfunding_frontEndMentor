@@ -21,7 +21,7 @@
 }
 
 .modal {
-  position: fixed;
+  position: absolute;
   z-index: 1;
   left: 0;
   top: 0;
@@ -31,6 +31,7 @@
   }
   &__options {
     .option {
+      overflow: hidden;
       @include card(solid);
       border-width: 0.1rem;
       border-color: $color-wheat;

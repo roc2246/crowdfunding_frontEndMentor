@@ -78,7 +78,8 @@ a {
       border: none;
       caret-color: #3cb4ac;
       font-size: 1rem;
-      font-weight: 700; }
+      font-weight: 700;
+      background: transparent; }
 
 .progress-bar {
   height: 1.5rem;
@@ -166,6 +167,8 @@ main {
 .out-of-stock .btn {
   background-color: grey;
   color: #fff; }
+  .out-of-stock .btn:active {
+    display: none; }
 
 .backer-metrics {
   display: flex;
@@ -243,13 +246,14 @@ main {
     text-align: center; }
 
 .modal {
-  position: fixed;
+  position: absolute;
   z-index: 1;
   left: 0;
   top: 0; }
   .modal__radio {
     float: left; }
   .modal__options .option {
+    overflow: hidden;
     background-color: #fff;
     border-radius: .5rem;
     border-style: solid;
