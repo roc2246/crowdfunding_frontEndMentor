@@ -10,21 +10,29 @@ body {
 
 .heading-primary .heading-primary--sub {
   font-size: 1rem;
-  color: #7a7a7a; }
+  color: #7a7a7a;
+  line-height: 2rem;
+  font-weight: 700; }
 
 .heading-secondary .heading-secondary--sub {
   font-size: 1rem;
-  color: #7a7a7a; }
+  color: #7a7a7a;
+  line-height: 2rem;
+  font-weight: 700; }
 
 .heading-tertiary .heading-tertiary--main {
   font-size: 1.25rem; }
 
 .heading-tertiary .heading-tertiary--sub {
   font-size: 1rem;
-  color: #3cb4ac; }
+  color: #3cb4ac;
+  line-height: 2rem;
+  font-weight: 700; }
 
 .paragraph {
-  color: #7a7a7a; }
+  color: #7a7a7a;
+  line-height: 2rem;
+  font-weight: 700; }
 
 .metric .metric--progress {
   color: black;
@@ -129,7 +137,11 @@ a {
   flex-direction: row;
   justify-content: space-between; }
   .header__logo-box {
-    margin-left: 4%; }
+    margin-left: 8%; }
+
+@media only screen and (max-width: 480px) {
+  .header {
+    background-image: url("../images/image-hero-mobile.jpg"); } }
 
 .heading-primary {
   display: flex;
@@ -145,7 +157,16 @@ a {
 
 .nav {
   justify-content: space-between;
-  margin-right: 4%; }
+  margin-right: 8%; }
+  .nav__toggle {
+    display: none; }
+  .nav .mobile-nav {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    z-index: 1;
+    position: absolute;
+    right: 10vw; }
   .nav__link {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -153,15 +174,21 @@ a {
     .nav__link:link, .nav__link:visited {
       color: white; }
 
+@media only screen and (max-width: 480px) {
+  .nav__toggle {
+    display: block; }
+  .nav__link {
+    display: none; } }
+
 main {
-  max-width: 60%;
+  max-width: 40%;
   margin-left: auto;
   margin-right: auto;
   margin-top: -6rem; }
 
 @media only screen and (max-width: 480px) {
   main {
-    max-width: 80%; } }
+    max-width: 90%; } }
 
 .project-details__offers-box .offer {
   background-color: #fff;
@@ -172,17 +199,21 @@ main {
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding: 2rem; }
-  .project-details__offers-box .offer .heading-tertiary .heading-tertiary--sub {
-    float: right; }
-  .project-details__offers-box .offer .offer__amount-available {
+  .project-details__offers-box .offer .heading-tertiary {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap; }
-    .project-details__offers-box .offer .offer__amount-available .metric {
+  .project-details__offers-box .offer__amount-available {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .project-details__offers-box .offer__amount-available .metric {
       display: flex;
-      flex-direction: row; }
-      .project-details__offers-box .offer .offer__amount-available .metric--paragraph {
+      flex-direction: row;
+      margin-right: 1rem; }
+      .project-details__offers-box .offer__amount-available .metric--paragraph {
         margin-left: 0.25rem;
         margin-top: 0rem;
         padding: 0.5rem; }
@@ -227,16 +258,13 @@ main {
 
 @media only screen and (max-width: 480px) {
   .backer-metrics {
-    display: flex;
     flex-direction: column; }
     .backer-metrics__wrapper {
       width: 100%;
       height: auto;
-      display: flex;
       flex-direction: column;
       align-items: center; }
     .backer-metrics__metric-box {
-      display: flex;
       flex-direction: column; }
       .backer-metrics__metric-box .metric {
         text-align: center;
@@ -244,10 +272,11 @@ main {
         .backer-metrics__metric-box .metric--progress, .backer-metrics__metric-box .metric--paragraph {
           text-align: center; }
       .backer-metrics__metric-box hr {
-        margin-left: 0;
-        margin-right: 0;
+        margin-left: auto;
+        margin-right: auto;
         margin-top: 1rem;
-        margin-bottom: 1rem; }
+        margin-bottom: 1rem;
+        width: 25%; }
     .backer-metrics .progress-bar {
       margin-top: 1rem; } }
 
@@ -257,7 +286,7 @@ main {
   align-items: center; }
   .project-top__logo-box {
     position: absolute;
-    margin-top: -5.5rem;
+    margin-top: -3.5rem;
     margin-left: auto;
     margin-right: auto; }
   .project-top__text-box {
@@ -281,8 +310,10 @@ main {
       margin-top: -5.5rem;
       margin-left: auto;
       margin-right: auto; }
+    .project-top__logo-box {
+      margin-top: -3.5rem; }
     .project-top__text-box {
-      width: 125%;
+      width: 90%;
       height: auto; }
       .project-top__text-box .btn--green {
         float: left; }
@@ -299,13 +330,7 @@ main {
   margin-bottom: 1rem;
   margin-left: auto;
   margin-right: auto;
-  padding: 4rem; }
-
-@media only screen and (max-width: 480px) {
-  .project-top,
-  .backer-metrics,
-  .project-details {
-    padding: 4rem; } }
+  padding: 2rem; }
 
 .modal,
 .confirm {

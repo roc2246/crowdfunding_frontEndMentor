@@ -1,6 +1,18 @@
 .nav {
   justify-content: space-between;
-  margin-right: 4%;
+  margin-right: 8%;
+  &__toggle{
+    display: none;
+  }
+  .mobile-nav{
+    display: none;
+    flex-direction: column;
+    background-color: white;
+
+    z-index: 1;
+    position: absolute;
+    right: 10vw;
+  }
   &__link {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -8,6 +20,17 @@
     &:link,
     &:visited {
       color: white;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .nav {
+    &__toggle{
+      display: block;
+    }
+    &__link {
+      display: none;
     }
   }
 }

@@ -2,6 +2,8 @@
   .heading-primary--sub {
     font-size: 1rem;
     color: $color-neutral-light;
+    line-height: 2rem;
+  font-weight: $font-weight-heavy;
   }
 }
 
@@ -9,6 +11,8 @@
   .heading-secondary--sub {
     font-size: 1rem;
     color: $color-neutral-light;
+    line-height: 2rem;
+  font-weight: $font-weight-heavy;
   }
 }
 
@@ -19,11 +23,15 @@
   .heading-tertiary--sub {
     font-size: 1rem;
     color: $color-primary-light;
+    line-height: 2rem;
+  font-weight: $font-weight-heavy;
   }
 }
 
 .paragraph {
   color: $color-neutral-light;
+  line-height: 2rem;
+  font-weight: $font-weight-heavy;
 }
 
 .metric {

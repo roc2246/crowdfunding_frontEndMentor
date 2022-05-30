@@ -4,7 +4,7 @@
   align-items: center;
   &__logo-box {
     position: absolute;
-    margin-top: -5.5rem;
+    margin-top: -3.5rem;
     margin-left: auto;
     margin-right: auto;
   }
@@ -35,8 +35,11 @@
       margin-left: auto;
       margin-right: auto;
     }
+    &__logo-box {
+      margin-top: -3.5rem;
+    }
     &__text-box {
-      width: 125%;
+      width: 90%;
       height: auto;
       .btn--green {
         float: left;
