@@ -45,7 +45,9 @@
               strain.</span
             >
           </h1>
-          <a onclick="toggleModal('none','block')" class="btn btn--green">Back this project</a>
+          <a onclick="toggleModal('none','block')" class="btn btn--green"
+            >Back this project</a
+          >
           <a href="" class="btn btn--bookmark"
             ><img
               src="images/icon-bookmark.svg"
@@ -65,12 +67,12 @@
                 of <span class="metric--goal">$100,000 </span>backed
               </p>
             </div>
-            <hr>
+            <hr />
             <div class="metric">
               <span class="metric--progress">5,007</span>
               <p class="paragraph metric--paragraph">total backers</p>
             </div>
-            <hr>
+            <hr />
             <div class="metric">
               <span class="metric--progress">56</span>
               <p class="paragraph">days left</p>
@@ -80,7 +82,6 @@
             <div class="progress-bar__progress"></div>
           </div>
         </div>
-       
       </div>
 
       <div class="project-details">
@@ -170,7 +171,12 @@
       </div>
     </main>
     <div class="modal">
-      <img src="images/icon-close-modal.svg" alt="Close Button" class="modal__close" onclick="toggleModal('block', 'none')">
+      <img
+        src="images/icon-close-modal.svg"
+        alt="Close Button"
+        class="modal__close"
+        onclick="toggleModal('block', 'none')"
+      />
       <div class="modal__text-box">
         <h2 class="heading-secondary">
           <span class="heading-secondary--main">Back this project</span>
@@ -182,9 +188,10 @@
       </div>
 
       <div class="modal__options">
+        <div class="option__radio"></div>
+
         <div class="option">
           <div class="option__top">
-            <div class="option__radio"></div>
             <h3 class="heading-tertiary">
               <span class="heading-tertiary--main">Pledge with no reward</span>
               <span class="heading-tertiary--sub"></span>
@@ -202,8 +209,9 @@
         </div>
 
         <div class="option">
+          <div class="option__radio"></div>
+
           <div class="option__top">
-            <div class="option__radio"></div>
             <h3 class="heading-tertiary">
               <span class="heading-tertiary--main"> Bamboo Stand</span>
               <span class="heading-tertiary--sub">Pledge $25 or more</span>
@@ -218,16 +226,21 @@
             launch our promotional campaign, and you’ll be added to a special
             Backer member list.
           </p>
+          <hr />
           <div class="option__pledge">
             <p class="paragraph">Enter your pledge</p>
-            <a href="" class="btn btn--amount">$25</a
-            ><a href="" class="btn btn--green">Continue</a>
+            <a href="" class="btn btn--green">Continue</a>
+            <a class="btn btn--amount">
+              <form action="" class="amount">
+                $ <input type="text" size="2" class="amount__value" />
+              </form>
+            </a>
           </div>
         </div>
 
         <div class="option">
+          <div class="option__radio"></div>
           <div class="option__top">
-            <div class="option__radio"></div>
             <h3 class="heading-tertiary">
               <span class="heading-tertiary--main">Black Edition Stand</span>
               <span class="heading-tertiary--sub">Pledge $75 or more</span>
@@ -242,16 +255,25 @@
             you. You’ll be added to our Backer member list. Shipping is
             included.
           </p>
+          <hr />
           <div class="option__pledge">
             <p class="paragraph">Enter your pledge</p>
-            <a href="" class="btn btn--amount">$75</a
-            ><a href="" class="btn btn--green">Continue</a>
+            <a href="" class="btn btn--green">Continue</a>
+            <a href="" class="btn btn--amount"
+              ><form action="" class="amount">
+                $
+                <input
+                  type="text"
+                  size="2"
+                  class="amount__value"
+                /></form></a
+            >
           </div>
         </div>
 
         <div class="option out-of-stock">
+          <div class="option__radio"></div>
           <div class="option__top">
-            <div class="option__radio"></div>
             <h3 class="heading-tertiary">
               <span class="heading-tertiary--main"
                 >Mahogany Special Edition
@@ -268,10 +290,19 @@
             personal thank you. You’ll be added to our Backer member list.
             Shipping is included.
           </p>
+          <hr />
           <div class="option__pledge">
             <p class="paragraph">Enter your pledge</p>
-            <a href="" class="btn btn--amount">$200</a
-            ><a href="" class="btn btn--green">Continue</a>
+            <a href="" class="btn btn--green">Continue</a>
+            <a href="" class="btn btn--amount"
+              ><form action="" class="amount">
+                $
+                <input
+                  type="text"
+                  size="2"
+                  class="amount__value"
+                /></form></a
+            >
           </div>
         </div>
       </div>

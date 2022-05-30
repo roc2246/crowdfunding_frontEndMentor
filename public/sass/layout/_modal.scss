@@ -2,14 +2,13 @@
 .confirm {
   display: none;
   @include card(none);
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 12%;
+  margin-right: 12%;
   margin-top: 2.5%;
   margin-bottom: 2.5%;
   padding: 5%;
 
-
-  &__close{
+  &__close {
     float: right;
     cursor: pointer;
   }
@@ -22,7 +21,6 @@
 }
 
 .modal {
-  
   position: fixed;
   z-index: 1;
   left: 0;
@@ -36,15 +34,43 @@
       margin-bottom: 1rem;
       padding: 2rem;
 
-
       &__top {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        .heading-tertiary{
+          .heading-tertiary--sub{
+            margin-left: 1rem;
+          }
+        }
         .metric {
           display: flex;
           flex-direction: row;
+          margin-top: .5rem;
+          .metric--progress{
+            margin-right: .5rem;
+          }
+          .metric--paragraph{
+            margin-top: .5rem;
+          }
         }
+      }
+      hr {
+        width: 100%;
+      }
+      &__pledge {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        .paragraph{
+         display: inline-block;
+         margin-top: 1rem;
+        }
+       .btn{
+         float: right;
+       }
+       .btn--amount{
+         margin-right: 1rem;
+       }
       }
     }
   }

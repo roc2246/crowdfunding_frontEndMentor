@@ -13,27 +13,49 @@
   &--green {
     background-color: $color-primary-light;
     color: $color-white;
-    &:hover{
+    &:hover {
       background-color: $color-primary-dark;
     }
   }
 
-  &--bookmark{
+  &--bookmark {
     background-color: $color-wheat;
     color: $color-neutral-light;
     font-weight: $font-weight-heavy;
     border-top-left-radius: 0rem;
     border-bottom-left-radius: 0rem;
-  padding-right: 1.5rem;
+    padding-right: 1.5rem;
 
-    &__icon{
+    &__icon {
       position: absolute;
       margin-left: -3rem;
       margin-top: -1.2rem;
     }
-   &__text{
-     padding-left: 1rem;
-     padding-right: .5rem;
-   }
+    &__text {
+      padding-left: 1rem;
+      padding-right: 0.5rem;
+    }
+  }
+
+  &--amount {
+    border: solid;
+    border-width: 0.05rem;
+    border-color: $color-primary-light;
+    color: grey;
+    font-weight: $font-weight-heavy;
+    width: 3rem;
+    .amount {
+      display: flex;
+      flex-direction: row;
+
+      &__value {
+        outline: none;
+        border: none;
+        caret-color: $color-primary-light;
+        font-size: 1rem;
+    font-weight: $font-weight-heavy;
+
+      }
+    }
   }
 }
