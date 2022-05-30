@@ -225,6 +225,32 @@ main {
   .backer-metrics .progress-bar {
     margin-top: 1rem; }
 
+@media only screen and (max-width: 480px) {
+  .backer-metrics {
+    display: flex;
+    flex-direction: column; }
+    .backer-metrics__wrapper {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .backer-metrics__metric-box {
+      display: flex;
+      flex-direction: column; }
+      .backer-metrics__metric-box .metric {
+        text-align: center;
+        margin: 0; }
+        .backer-metrics__metric-box .metric--progress, .backer-metrics__metric-box .metric--paragraph {
+          text-align: center; }
+      .backer-metrics__metric-box hr {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 1rem;
+        margin-bottom: 1rem; }
+    .backer-metrics .progress-bar {
+      margin-top: 1rem; } }
+
 .project-top {
   display: flex;
   flex-direction: column;
