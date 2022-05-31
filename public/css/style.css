@@ -432,7 +432,7 @@ main {
         margin-right: 1rem; }
 
 .confirm {
-  max-width: 25%;
+  width: 25%;
   left: 35vw;
   position: fixed; }
   .confirm__img-box {
@@ -445,7 +445,7 @@ main {
 @media only screen and (max-width: 480px) {
   .modal,
   .confirm {
-    max-width: 75%; }
+    width: 75%; }
   .modal__options .option__top .heading-tertiary {
     display: flex;
     flex-direction: column; }
@@ -468,4 +468,6 @@ main {
     float: right;
     bottom: 0; }
   .modal__options .option__pledge .btn--amount {
-    float: rleft; } }
+    float: rleft; }
+  .confirm {
+    left: 6vw; } }

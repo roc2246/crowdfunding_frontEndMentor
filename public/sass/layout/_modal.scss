@@ -116,7 +116,7 @@
 }
 
 .confirm {
-  max-width: 25%;
+  width: 25%;
   left: 35vw;
   position: fixed;
   &__img-box {
@@ -132,7 +132,7 @@
 @media only screen and (max-width: 480px) {
   .modal,
   .confirm {
-    max-width: 75%;
+    width: 75%;
   }
 
   .modal {
@@ -187,5 +187,8 @@ text-align: center;
         }
       }
     }
+  }
+  .confirm{
+    left: 6vw;
   }
 }
