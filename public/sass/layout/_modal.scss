@@ -5,8 +5,6 @@
   z-index: 1;
   top: 20vh;
 
-  
-
   display: none;
   @include card(none);
   padding: 2rem;
@@ -139,10 +137,11 @@
     &__options {
       .option {
         &__top {
-          .heading-tertiary{
+          .heading-tertiary {
             display: flex;
             flex-direction: column;
-            &--main, &--sub{
+            &--main,
+            &--sub {
               margin: 0;
             }
           }
@@ -160,35 +159,33 @@
           .metric {
             &--mobile {
               display: flex;
-              
             }
-           &--paragraph{
-              margin-top: -.05rem;
-              margin-left: .5rem;
-              }
+            &--paragraph {
+              margin-top: -0.05rem;
+              margin-left: 0.5rem;
+            }
           }
         }
         &__pledge {
           .paragraph {
             width: 100%;
-text-align: center;
+            text-align: center;
           }
-  
+
           .btn {
-             &--green{
-               float: right;
-               bottom: 0;
-             }
-             &--amount{
-               float: rleft;
-             }
+            &--green {
+              float: right;
+              bottom: 0;
+            }
+            &--amount {
+              float: rleft;
+            }
           }
-          
         }
       }
     }
   }
-  .confirm{
+  .confirm {
     left: 6vw;
   }
 }

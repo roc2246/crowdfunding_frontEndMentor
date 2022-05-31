@@ -459,8 +459,8 @@ main {
   .modal__options .option__bottom .metric--mobile {
     display: flex; }
   .modal__options .option__bottom .metric--paragraph {
-    margin-top: -.05rem;
-    margin-left: .5rem; }
+    margin-top: -0.05rem;
+    margin-left: 0.5rem; }
   .modal__options .option__pledge .paragraph {
     width: 100%;
     text-align: center; }
