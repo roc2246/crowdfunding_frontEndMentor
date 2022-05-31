@@ -25,6 +25,7 @@ const option = document.getElementsByClassName("option");
 const divider = document.querySelectorAll(".option > hr");
 const pledge = document.getElementsByClassName("option__pledge");
 const radio = document.getElementsByClassName("radio");
+
 Object.keys(radio).forEach((rad) => {
   radio[rad].addEventListener("change", () => {
     Object.keys(radio).forEach((rad) => {
@@ -46,3 +47,9 @@ const complete = () => {
   modal.style.display = "none";
   completed.style.display = "block";
 };
+
+Object.keys(radio).forEach(rad => {
+  if(option[rad].classList.contains("out-of-stock")){
+    radio[rad].disabled = true;
+  }
+})
