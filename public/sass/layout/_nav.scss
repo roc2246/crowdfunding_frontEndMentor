@@ -1,10 +1,10 @@
 .nav {
   justify-content: space-between;
   margin-right: 8%;
-  &__toggle{
+  &__toggle {
     display: none;
   }
-  .mobile-nav{
+  .mobile-nav {
     display: none;
     flex-direction: column;
     background-color: white;
@@ -12,6 +12,30 @@
     z-index: 1;
     position: absolute;
     right: 10vw;
+    top: 10vh;
+
+
+    min-width: 75%;
+    min-height: 20%;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 1rem;
+    border-radius: 1rem;
+  box-shadow: 0rem 0rem 1rem 1rem rgba(0, 0, 0, 0.603);
+    hr {
+      color: grey;
+      width: 110%;
+      margin-left: -1rem;
+    }
+    &__link {
+      font-weight: $font-weight-heavy;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      &:visited {
+        color: black;
+      }
+    }
   }
   &__link {
     margin-left: 1rem;
@@ -26,7 +50,7 @@
 
 @media only screen and (max-width: 480px) {
   .nav {
-    &__toggle{
+    &__toggle {
       display: block;
     }
     &__link {
