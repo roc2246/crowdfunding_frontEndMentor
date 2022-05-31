@@ -223,6 +223,7 @@ main {
     justify-content: space-between;
     flex-wrap: wrap; }
   .project-details__offers-box .offer__amount-available {
+    margin-top: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -235,6 +236,8 @@ main {
         margin-left: 0.25rem;
         margin-top: 0rem;
         padding: 0.5rem; }
+    .project-details__offers-box .offer__amount-available .btn {
+      margin-bottom: 1rem; }
 
 .out-of-stock *,
 .out-of-stock .metric--progress {
