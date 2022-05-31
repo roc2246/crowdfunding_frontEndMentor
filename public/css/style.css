@@ -354,7 +354,6 @@ main {
   box-shadow: 0rem 0rem 1rem 1rem rgba(0, 0, 0, 0.603);
   z-index: 1;
   top: 20vh;
-  width: 40%;
   display: none;
   background-color: #fff;
   border-radius: .5rem;
@@ -374,6 +373,7 @@ main {
     text-align: center; }
 
 .modal {
+  width: 40%;
   position: absolute; }
   .modal__options .option {
     overflow: hidden;
@@ -432,6 +432,8 @@ main {
         margin-right: 1rem; }
 
 .confirm {
+  max-width: 25%;
+  left: 35vw;
   position: fixed; }
   .confirm__img-box {
     text-align: center; }
@@ -443,7 +445,7 @@ main {
 @media only screen and (max-width: 480px) {
   .modal,
   .confirm {
-    width: 75%; }
+    max-width: 75%; }
   .modal__options .option__top .heading-tertiary {
     display: flex;
     flex-direction: column; }

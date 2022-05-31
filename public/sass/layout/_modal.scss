@@ -5,7 +5,7 @@
   z-index: 1;
   top: 20vh;
 
-  width: 40%;
+  
 
   display: none;
   @include card(none);
@@ -27,6 +27,7 @@
 }
 
 .modal {
+  width: 40%;
   position: absolute;
   &__options {
     .option {
@@ -115,6 +116,8 @@
 }
 
 .confirm {
+  max-width: 25%;
+  left: 35vw;
   position: fixed;
   &__img-box {
     text-align: center;
@@ -129,7 +132,7 @@
 @media only screen and (max-width: 480px) {
   .modal,
   .confirm {
-    width: 75%;
+    max-width: 75%;
   }
 
   .modal {
