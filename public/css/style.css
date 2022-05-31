@@ -445,7 +445,8 @@ main {
 @media only screen and (max-width: 480px) {
   .modal,
   .confirm {
-    width: 75%; }
+    width: 75%;
+    display: none; }
   .modal__options .option__top .heading-tertiary {
     display: flex;
     flex-direction: column; }
