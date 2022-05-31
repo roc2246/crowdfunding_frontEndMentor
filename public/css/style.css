@@ -372,10 +372,9 @@ main {
 
 .modal {
   position: absolute; }
-  .modal__radio {
-    float: left; }
   .modal__options .option {
     overflow: hidden;
+    flex-wrap: wrap;
     background-color: #fff;
     border-radius: .5rem;
     border-style: solid;
@@ -384,29 +383,36 @@ main {
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding: 2rem; }
-    .modal__options .option__radio {
-      margin: 1.15rem;
-      float: left; }
     .modal__options .option__top {
-      margin-left: 2rem;
       display: flex;
-      flex-direction: row;
-      justify-content: space-between; }
-      .modal__options .option__top .heading-tertiary--main:hover {
-        color: #3cb4ac;
-        cursor: pointer; }
-      .modal__options .option__top .heading-tertiary .heading-tertiary--sub {
-        margin-left: 1rem; }
-      .modal__options .option__top .metric {
+      flex-direction: row; }
+      .modal__options .option__top .radio-box {
         display: flex;
-        flex-direction: row;
-        margin-top: 0.5rem; }
-        .modal__options .option__top .metric .metric--progress {
+        align-items: center; }
+        .modal__options .option__top .radio-box .radio {
+          margin: 0 auto;
+          transform: scale(160%); }
+      .modal__options .option__top .heading-tertiary {
+        margin-left: 1rem;
+        margin-bottom: 0; }
+        .modal__options .option__top .heading-tertiary--main, .modal__options .option__top .heading-tertiary--sub {
+          margin: 0.5rem; }
+        .modal__options .option__top .heading-tertiary--main:hover {
+          color: #3cb4ac;
+          cursor: pointer; }
+      .modal__options .option__top .metric {
+        flex-direction: row; }
+        .modal__options .option__top .metric--desktop {
+          display: flex;
+          margin-left: auto; }
+        .modal__options .option__top .metric--progress {
           margin-right: 0.5rem; }
-        .modal__options .option__top .metric .metric--paragraph {
+        .modal__options .option__top .metric--paragraph {
           margin-top: 0.5rem; }
-    .modal__options .option .paragraph:nth-child(3), .modal__options .option .paragraph:nth-child(1) {
-      margin-left: 3.5rem; }
+    .modal__options .option__bottom .paragraph {
+      margin-left: 2.25rem; }
+    .modal__options .option__bottom .metric--mobile {
+      display: none; }
     .modal__options .option hr {
       width: 100%;
       display: none; }
@@ -432,5 +438,29 @@ main {
     width: 4rem; }
 
 @media only screen and (max-width: 480px) {
-  .modal, .confirm {
-    width: 75%; } }
+  .modal,
+  .confirm {
+    width: 75%; }
+  .modal__options .option__top .heading-tertiary {
+    display: flex;
+    flex-direction: column; }
+    .modal__options .option__top .heading-tertiary--main, .modal__options .option__top .heading-tertiary--sub {
+      margin: 0; }
+  .modal__options .option__top .metric--desktop {
+    display: none; }
+  .modal__options .option__bottom .paragraph {
+    width: 100%;
+    margin-left: 0; }
+  .modal__options .option__bottom .metric--mobile {
+    display: flex; }
+  .modal__options .option__bottom .metric--paragraph {
+    margin-top: -.05rem;
+    margin-left: .5rem; }
+  .modal__options .option__pledge .paragraph {
+    width: 100%;
+    text-align: center; }
+  .modal__options .option__pledge .btn--green {
+    float: right;
+    bottom: 0; }
+  .modal__options .option__pledge .btn--amount {
+    float: rleft; } }

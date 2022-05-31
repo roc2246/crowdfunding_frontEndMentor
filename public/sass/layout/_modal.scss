@@ -28,12 +28,10 @@
 
 .modal {
   position: absolute;
-  &__radio {
-    float: left;
-  }
   &__options {
     .option {
       overflow: hidden;
+      flex-wrap: wrap;
       @include card(solid);
       border-width: 0.1rem;
       border-color: $color-wheat;
@@ -41,44 +39,57 @@
       margin-bottom: 1rem;
       padding: 2rem;
 
-      &__radio {
-        margin: 1.15rem;
-        float: left;
-      }
       &__top {
-        margin-left: 2rem;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        .radio-box {
+          display: flex;
+          align-items: center;
+          .radio {
+            margin: 0 auto;
+            transform: scale(160%);
+          }
+        }
         .heading-tertiary {
+          margin-left: 1rem;
+          margin-bottom: 0;
+          &--main,
+          &--sub {
+            margin: 0.5rem;
+          }
           &--main {
             &:hover {
               color: $color-primary-light;
               cursor: pointer;
             }
           }
-          .heading-tertiary--sub {
-            margin-left: 1rem;
-          }
         }
         .metric {
-          display: flex;
+          &--desktop {
+            display: flex;
+            margin-left: auto;
+          }
           flex-direction: row;
-          margin-top: 0.5rem;
-          .metric--progress {
+          &--progress {
             margin-right: 0.5rem;
           }
-          .metric--paragraph {
+          &--paragraph {
             margin-top: 0.5rem;
           }
         }
       }
-      .paragraph {
-        &:nth-child(3),
-        &:nth-child(1) {
-          margin-left: 3.5rem;
+
+      &__bottom {
+        .paragraph {
+          margin-left: 2.25rem;
+        }
+        .metric {
+          &--mobile {
+            display: none;
+          }
         }
       }
+
       hr {
         width: 100%;
         display: none;
@@ -116,8 +127,62 @@
 }
 
 @media only screen and (max-width: 480px) {
- .modal, .confirm{
-  width: 75%;
- }
-}
+  .modal,
+  .confirm {
+    width: 75%;
+  }
 
+  .modal {
+    &__options {
+      .option {
+        &__top {
+          .heading-tertiary{
+            display: flex;
+            flex-direction: column;
+            &--main, &--sub{
+              margin: 0;
+            }
+          }
+          .metric {
+            &--desktop {
+              display: none;
+            }
+          }
+        }
+        &__bottom {
+          .paragraph {
+            width: 100%;
+            margin-left: 0;
+          }
+          .metric {
+            &--mobile {
+              display: flex;
+              
+            }
+           &--paragraph{
+              margin-top: -.05rem;
+              margin-left: .5rem;
+              }
+          }
+        }
+        &__pledge {
+          .paragraph {
+            width: 100%;
+text-align: center;
+          }
+  
+          .btn {
+             &--green{
+               float: right;
+               bottom: 0;
+             }
+             &--amount{
+               float: rleft;
+             }
+          }
+          
+        }
+      }
+    }
+  }
+}
