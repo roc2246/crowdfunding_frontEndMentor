@@ -468,6 +468,6 @@ main {
     float: right;
     bottom: 0; }
   .modal__options .option__pledge .btn--amount {
-    float: rleft; }
+    float: left; }
   .confirm {
     left: 6vw; } }
